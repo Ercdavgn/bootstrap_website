@@ -1,0 +1,44 @@
+@mixin col($width, $float) {
+  width: $width;
+  float: $float;
+}
+
+@mixin respond-to($media) {
+  
+  @if $media==tablet {
+    @media only screen and (min-width: $mobile-xs) {
+      @content;
+    }
+  }
+  
+  @if $media==tablet {
+    @media only screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+    
+  @if $media==tablet {
+    @media only screen and (min-width: $bootstrap-sm) {
+      @content;
+    }
+  }
+
+  @if $media==tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @if $media==tablet {
+    @media only screen and (min-width: $dektop) {
+      @content;
+    }
+  }
+  
+  @if $media==tablet {
+    @media only screen and (min-width: $bootstrap-lg) {
+      @content;
+    }
+  }
+    
+}

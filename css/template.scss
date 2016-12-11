@@ -1,0 +1,672 @@
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                              IMPORTS                                                                                        //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+@import "_mixins";
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                             VARIABLES                                                                                       //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+$iconopowerblue:#252b6a;
+$iconopowerred:#db1e22;
+
+
+$font-colour:#333;
+$font-drk-bkgd:#f2f2f2;
+
+$bkgd-verylight:#f0f0f0;
+$bkgd-light:#8c8c8c;
+
+$lightblue: #0645ad;
+
+$font-sm:.88em;
+$font-md:13px;
+$font-lg:1.1em;
+$font-xl:1.3em;
+$font-xxl:1.6em;
+
+$gutter: 20px;
+
+$font-serif: Georgia, serif;
+$font-simple: Arial, sans-serif;
+
+$bluefade-dark:#1c2141;
+$bluefade-light:#434dac;
+
+.clearfix{
+    clear:both
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                               FONTS                                                                                         //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+    font-family:$font-serif !important
+}
+h3 {
+    font-size:$font-lg !important
+}
+#content_area a {
+    color:$lightblue !important
+}
+#topbar {
+    font: $font-lg $font-simple
+}
+#topbar a{
+    color:$font-drk-bkgd !important
+}
+#carttitle{
+    font-size:$font-sm
+}
+#horznav a{
+    font-size:$font-lg;
+    color:white !important
+}
+.menu-header{
+    font-family:$font-simple !important
+}
+.carousel-caption{
+    font-size:$font-lg
+}
+#copyright span,#copyright a{
+    font-size:$font-sm;
+    font-family:$font-simple
+}
+#footTopBar {
+    font-size:$font-lg
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                              COLORS                                                                                         //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//blue text
+.highlights{
+    color:$iconopowerblue
+}
+// ************** TAGS **************
+
+select {
+    background:transparent
+}
+// ************** TOP BAR **************
+#topbar {
+    background:-webkit-linear-gradient(#333,grey);
+    background:-moz-linear-gradient(#333,grey);
+    background:linear-gradient(#333,grey);
+    color:$font-drk-bkgd;
+    a {
+        color:$font-drk-bkgd
+    }
+}
+// ************** HEADER **************
+// ************** NAV BAR **************
+#horznav{
+    background:$iconopowerblue;
+    a {
+        color:$font-drk-bkgd !important;
+        &:hover{
+            color:$iconopowerred !important;
+            background:white !important
+        }
+    }
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background:none !important;
+}
+// ************** VNAV **************
+.menu-header{
+    background:$iconopowerblue;
+    color:$font-drk-bkgd;
+}
+.vnav__link2{
+    color:$iconopowerblue
+}
+.vnav__item:hover {
+    background:lighten($iconopowerblue, 65%) !important
+}
+#footer_inner a {
+    color:$font-drk-bkgd;
+}
+// ************** MAIN **************
+#mycarousel div{
+    display:inline !important
+}
+#carousel-control-wrap a span{
+    color:$font-drk-bkgd !important
+}
+.carousel-caption{
+    background-color:rgba(black,.5)
+}
+.feature-description{
+    color:$iconopowerblue
+}
+.text {
+    color:$font-colour
+}
+// ************** FOOTER **************
+#footTopBar{
+    background:$iconopowerblue;
+    color:$font-drk-bkgd;
+    a{
+
+    color:$font-drk-bkgd !important
+            }
+}
+#footer_inner {
+    background:$bkgd-light !important
+}
+#footer_inner a{
+    color:$font-drk-bkgd !important
+}
+#copyright {
+        color:$font-drk-bkgd
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                          TEMPLATE                                                                                           //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//------------------------------- LAYOUT ------------------------------//
+// ************** REAPEATED **************
+.no-padding {
+    padding:0 !important
+}
+.list-padding{
+    padding:5px 0;
+}
+.list-group-item{
+    padding: 5px 15px !important
+}
+.gutter-left{
+    padding-left:9px;
+}
+.navbar {
+    margin-bottom:10px !important;
+}
+.panel{
+    margin:20px auto;
+    box-shadow: none !important
+}
+.well {
+    background:none !important
+}
+.no-bottom{
+    padding-bottom:0 !important;
+    margin-bottom:0 !important
+}
+// ************** TAGS **************
+body{
+    
+}
+h3 {
+    margin:10px 0 5px !important
+}
+// ************** BODY **************
+#page_wrapper{
+    padding:0 !important}
+// ************** TOP BAR **************
+#topbar_contact{
+    padding-top:11px
+}
+#topbar_buttons{
+    padding-top:4px
+}
+// ************** BODY **************
+.page-header{
+    margin-top: 0 !important;
+}
+// ************** HEADER **************
+#logo_wrap{
+    margin-top:5px;
+    padding:0
+}
+#divcaption {
+    margin:5px 0 0 5px
+}
+#header_menu,#header_search{
+    padding:0
+}
+// ************** HORZ NAV **************
+#horznav{
+    margin:25px 0 0;
+    padding:3px 15px
+}
+// ************** VNAV **************
+
+#left_nav{
+    padding:0
+}
+.menu-header{
+    padding:6px
+}
+.vnav{
+    padding:0;margin:0
+}
+.vnav__item{
+    padding:6px 5px
+}
+.vnav__item img {
+    padding-left:20px
+}
+// ************** MAIN **************
+#includeMain {
+    margin-top:$gutter / 2
+}
+.btn-blue {
+    margin-top:-18px;
+}
+.question-banner{
+    padding-top:$gutter * 1.5 !important;
+}
+// ************** FOOTER **************
+#footTopBar {
+    margin-top:50px;
+    padding:10px 20px
+}
+#footTopLinks{
+    padding-top:3px;
+}
+#footTopLinks .pipe {
+    top:0px
+}
+#footer_inner {
+    padding:10px 0 5px;
+}
+#footCompanyLogo > img {
+    transform:translateY(-2px);
+}
+#footTopLinks > a > img {
+    transform:translateY(-1px);
+}
+#footCompanyName{
+    box-sizing:border-box;
+}
+#copyright {
+    padding-top:5px
+}
+
+//------------------------------ STYLING ------------------------------//
+* {
+    box-sizing:border-box
+}
+// ************** REPEATED **************
+.navbar{
+    min-height:40px !important
+}
+.navbar-default {
+    border:none !important
+}
+.inline{
+    display:inline !important 
+}
+.full {
+    width:100%;
+}
+.no-well .well{
+    border:none !important;
+    box-shadow:none !important
+    
+}
+// ************** TAGS **************
+a {
+    text-decoration:none !important
+}
+img {
+    max-width:100%
+}
+.nohover:hover {
+    background:none !important;
+}
+// ************** TOP BAR **************
+#topbar {
+    border-radius:0 !important;
+}
+.pipe{
+    position:relative;
+    top:-1px;
+}
+// ************** BODY **************
+.page-header{
+    border:none !important;
+}
+// ************** HEADER **************
+#header_menu div {
+    display:block
+}
+// ************** NAV BAR **************
+.overlay,#left_nav{
+    background:white;
+    z-index:50;
+    height:954px;
+}
+.nav-tabs {
+    border:none !important;
+}
+.nav-tabs li a {
+    border-radius:0 !important
+}
+// ************** VNAV **************
+.vnav{
+    list-style:none;
+}
+.vnav__item:hover>.vnav__subnav,.vnav__link2{
+    display:block
+}
+.vnav--horizontal .vnav--level3,.vnav--horizontal .vnav--level4,.vnav--vertical .vnav__subnav{
+    left:100%;
+    transform:translateY(-35px)
+}
+.nav-tabs li {
+    width:14%;
+    text-align:center;
+}
+// ************** MAIN **************
+#contentwrap {
+    clear:both
+}
+.btn-blue{
+    background: -webkit-linear-gradient(#434dac,$bluefade-dark);
+    background: -moz-linear-gradient(#434dac,$bluefade-dark);
+    background: linear-gradient(#434dac,$bluefade-dark);
+}
+// ************** SLIDER **************
+// ************** FOOTER **************
+#footTopBar {
+    border-bottom:1px solid white;
+}
+h3.highlights{
+    padding-bottom:10px;
+}
+.list-group-item{
+    background:transparent !important;
+    border:none !important;
+}
+#copyrightHr{
+    width:100%;
+    margin:10px 0;
+}
+#ssl_icon{
+    height:30px;
+}
+
+//------------------------- BOOTSTRAP ADDONS --------------------------//
+// button-clear addon
+.btn-clear.focus,.btn-clear:focus{color:#333;background-color:#e6e6e6;border-color:#8c8c8c}
+.btn-clear:hover{color:#333;background-color:#e6e6e6;border-color:#adadad}
+.btn-clear.active,.btn-clear:active,.open>.dropdown-toggle.btn-clear{color:#333;background-color:#e6e6e6;border-color:#adadad}
+.btn-clear.active.focus,.btn-clear.active:focus,.btn-clear.active:hover,.btn-clear:active.focus,.btn-clear:active:focus,.btn-clear:active:hover,.open>.dropdown-toggle.btn-clear.focus,.open>.dropdown-toggle.btn-clear:focus,.open>.dropdown-toggle.btn-clear:hover{color:#333;background-color:#d4d4d4;border-color:#8c8c8c}
+.btn-clear.active,.btn-clear:active,.open>.dropdown-toggle.btn-clear{background-image:none}
+.btn-clear.disabled.focus,.btn-clear.disabled:focus,.btn-clear.disabled:hover,.btn-clear[disabled].focus,.btn-clear[disabled]:focus,.btn-clear[disabled]:hover,fieldset[disabled] .btn-clear.focus,fieldset[disabled] .btn-clear:focus,fieldset[disabled] .btn-clear:hover{background-color:#fff;border-color:#ccc}
+.btn-clear .badge{color:#fff;background-color:#333}
+
+// button-blue
+.btn-blue{color:#fff;background: -webkit-linear-gradient(#434dac,#1c2141) !important;
+    background: -moz-linear-gradient(#434dac,#1c2141) !important;
+    background: linear-gradient(#434dac,#1c2141) !important;border-color:#2e6da4}
+.btn-blue.focus,.btn-blue:focus{color:#fff;background-color:#286090;border-color:#122b40}
+.btn-blue:hover{color:$font-drk-bkgd !important;background-color:#fff;border-color:transparent}
+.btn-blue.active,.btn-blue:active,.open>.dropdown-toggle.btn-blue{color:#fff;background-color:#286090;border-color:#204d74}
+.btn-blue.active.focus,.btn-blue.active:focus,.btn-blue.active:hover,.btn-blue:active.focus,.btn-blue:active:focus,.btn-blue:active:hover,.open>.dropdown-toggle.btn-blue.focus,.open>.dropdown-toggle.btn-blue:focus,.open>.dropdown-toggle.btn-blue:hover{color:$iconopowerblue;background-color:#fff;border-color:transparent}
+.btn-blue.active,.btn-blue:active,.open>.dropdown-toggle.btn-blue{background-image:none}
+.btn-blue.disabled.focus,.btn-blue.disabled:focus,.btn-blue.disabled:hover,.btn-blue[disabled].focus,.btn-blue[disabled]:focus,.btn-blue[disabled]:hover,fieldset[disabled] .btn-blue.focus,fieldset[disabled] .btn-blue:focus,fieldset[disabled] .btn-blue:hover{background-color:$iconopowerblue;border-color:transparent}
+.btn-blue .badge{color:$iconopowerblue;background-color:#fff}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
+
+#includeContent{
+    padding-top:$gutter
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                          HOMEPAGE                                                                                           //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// ************** SLIDESHOW **************
+
+#myCarousel > div > div.item.active > a > img {
+    width:100%;
+}
+.carousel-caption{
+    padding:20px 40px!important;
+}
+#carousel-control-wrap {
+    margin-top:-30%
+}
+.carousel-control{
+    width:10% !important;
+    height:160px
+}
+.carousel-control.right,.carousel-control.left {
+    background:none !important;
+}
+
+.carousel-indicators {
+    bottom:0 !important;
+}
+
+.carousel-caption{
+    width:100%;
+    left:0 !important;
+    bottom:0 !important;
+    text-align:left !important;
+}
+.carousel-btn {
+    margin-top:-2.6%;
+}
+// ************** FEATURES **************
+#featureWrapper {
+    margin-top:$gutter;
+    padding:0;
+    a{
+        text-decoration:none
+    }
+}
+.feature-box {
+    background:url('/img/homepageadbackground.png');
+    background-size: 100% 100%;
+    padding:10px 30px !important;
+}
+.feature-title{
+    font-weight:700
+}
+.feature-brand img{
+    height:30px
+}
+.feature-title {
+    color:$font-drk-bkgd;
+    font-size: $font-xl;
+    font-family: $font-simple;
+    text-shadow: -1px -1px 1px #000,1px -1px 1px #000,-1px 1px 1px #000,1px 1px 1px #000;
+    text-decoration: none
+}
+.feature-box.col-xs-12 {
+    padding: 10px !important;
+}
+.feature_btnWrapper button{
+    margin:10px;
+    position:absolute;
+    bottom:10px;
+    left:12%;
+    width:70%
+}
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                            ABOUT                                                                                            //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                             FAQ                                                                                             //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+.faq-page div {
+    display:inline
+}
+.popup-text p{
+    padding:0 13px;
+}
+.faqTab{
+    width:15px;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                            BLOG                                                                                             //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+.horizontal-banner{
+    background:$bkgd-verylight !important;
+    border:none !important;
+    display:block;
+    padding:10px
+    
+}
+.blog-img {
+    padding:20px 0 0 !important
+}
+div.no-well img {
+    width:70%;
+}
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                            RFQ                                                                                              //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                           FORMS                                                                                             //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                          CONTACT                                                                                            //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+#map,#map div{
+    display:block
+}
+#map {
+    height: 400px;
+    width: 400px;
+    max-width:100%
+}
+#left_nav{
+    clear:both
+}
+
+
+
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                          CONTACT                                                                                            //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+#loginEmail,#loginPW {
+    width:190px !important;
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//                                                                             QUERIES                                                                                         //
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// 1200 ************** Bootstrap <lg
+@media only screen and (max-width:1200px){
+    .feature-box{
+       margin-bottom:20px;
+        min-height: 568px !important;
+    }
+    #left_nav{
+        height:1050px;
+    }
+}
+
+// 1080 ************** Desktop↑
+@media only screen and (min-width:1080px){
+    .feature-box{
+       margin-bottom:20px;
+        min-height: 568px !important;
+    }
+}
+// 1080 ************** Desktop↓
+@media only screen and (max-width:1080px){
+    .feature-box{
+        min-height: 490px !important;
+    }
+}
+// 1024 ************** Desktop↓
+@media only screen and (max-width:1024px){
+
+    #header_menu{
+        position:relative;
+        top:10px;
+    }
+    #search_form{
+        margin-top:20px
+    }
+}
+
+// 800 ************** Tablet XL↓
+@media only screen and (max-width:800px){
+    .nav-tabs li {
+        width:16%;
+    }
+        #left_nav{
+        height:954px;
+    }
+}
+
+// 768 ************** Tablet↑
+@media only screen and (min-width:768px){
+    .menu-header,.vnav__item{
+        padding:6px 0 6px 15px;
+    }
+    .feature-img img{
+        padding:10px 0;
+        max-height:154px;
+    }
+}
+// 768 ************** Tablet↓
+@media only screen and (max-width:768px){
+    header{
+        padding:0 10px 9px;
+    }    
+    .feature-box{
+        min-height: 320px !important;
+    }
+}
+// 690 ************** Bootstrap SM↓
+@media only screen and (max-width:690px){
+    #featureWrapper {
+        margin-top:0
+    }
+    #includeMain {
+    padding-left:0 !important
+    }
+}
+// 480 ************** Tablet↓
+@media only screen and (max-width:480px){
+    #map {
+    height: 200px;
+        }
+    #topbar_contact,#footCompanyLogo{
+        display:none;
+    }
+    #topbar_buttons{
+        width:100% !important
+    }
+    #left_nav{
+        height:1120px;
+    } 
+    #topbar_buttons{
+        width:100% !important
+    }
+    #horznav > ul > li:nth-child(2){
+        display:none
+    }
+}
+// 320 ************** Mini↑
+@media only screen and (min-width:400px){
+    .xs-up-hidden{
+        display:none
+    }
+}
+
+// 340 ************** Mini↓
+@media only screen and (max-width:320px){
+    .feature-wrapper{
+        margin:0
+    }
+}
