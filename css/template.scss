@@ -586,6 +586,16 @@ div.no-well img {
         min-height: 490px !important;
     }
 }
+
+
+// 1024 ************** Desktop↑
+@media only screen and (min-width:1024px){
+
+        #left_nav{
+        height:954px !important;
+    }
+}
+
 // 1024 ************** Desktop↓
 @media only screen and (max-width:1024px){
 
@@ -602,9 +612,6 @@ div.no-well img {
 @media only screen and (max-width:800px){
     .nav-tabs li {
         width:16%;
-    }
-        #left_nav{
-        height:954px;
     }
 }
 
