@@ -1,0 +1,101 @@
+<body id="body" class="first">
+    <!-- TOP BAR -->
+    <nav id="topbar" class="navbar navbar-default">
+
+      <!-- PHONE & HOURS -->
+      <div id="topbar_contact" class="col-sm-offset-1 col-xs-4 col-sm-6">
+        <span id="toordercall" class="hidden-xs hidden-sm">To order call:</span>
+        <span id="officenumber">
+            <strong class="hidden-xs">613.744.3670</strong>
+            <span class="hidden-sm hidden-md hidden-lg hidden-xl">613.744.3670</span></span>
+        <span class="pipe hidden-xs gutter-left">|</span>
+        <span id="opendays" class="hidden-xs gutter-left">Mon - Fri</span>
+        <span id="openhours" class="hidden-xs gutter-left">7:30am - 4:30pm</span>
+        <span id="callingarea" class="hidden-xs hidden-sm"> eastern</span>
+      </div>
+      <!-- TOP BAR BUTTONS-->
+
+      <div id="topbar_buttons" class="col-xs-8 col-sm-4 text-right">
+        <!-- SHOPPING CART -->
+        <div id="shopping_cart" class="inline">
+          <a href="login.html">
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+            <span id="carttitle">Cart (0)</span>
+          </a>
+        </div>
+
+        <span class="pipe hidden-xs gutter-left">|</span>
+        <!-- CURRENCY CHANCE -->
+        <div id="DropDown_Currency" class="inline">
+          <select id="currency_select" name="currex" class="btn btn-clear">
+            <option id="cdn" value="cdn">Canadian Dollar</option>
+            <option id="usd" value="usd">US Dollar</option>
+            <option id="blb" value="blb">British Pound</option>
+            <option id="eur" value="eur">Euro</option>
+          </select>
+        </div>
+
+      </div>
+    </nav>
+    <!-- /TOP BAR -->
+    <!-- HEADER -->
+    <div class="col-sm-offset-1 col-sm-10">
+
+      <header class="page-header">
+    <!-- COMPANY LOGO -->
+        <div id='logo_wrap' class="col-xs-9 col-md-7">
+          <div id="company_logo" class="pull-left">
+            <a href="index.html">
+              <img src="img/Iconopower%20Shadow%201530x249-2.png" alt="iconopower logo" />
+            </a>
+            <p id="divcaption" class="italic highlights"><em><strong>Providing Innovative Products and Solutions to the Power Electronics Industry
+          </strong></em></p>
+          </div>
+        </div>
+
+        <!-- LOGIN BUTTONS -->
+        <div id="header_menu" class="pull-right col-xs-3 col-md-5">
+          <div id="login_wrapper" class="list-padding">
+            <div class="text-right list-padding">
+              <a href="login.html">
+                <strong>My Account</strong>
+              </a>
+            </div>
+            <div class="text-right list-padding">
+              <a href="login.html">
+                <strong>Register</strong>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="header_search" class="pull-right col-xs-12 col-md-4 list-padding">
+          <!-- SEARCH BAR -->
+          <div class="search wrapper text-right">
+            <form id="search_form" action="/SearchResults.asp" method="get" name="SearchBoxForm" class="input-group">
+              <input type="text" name="Search" class="form-control" value="Search..." onfocus="if(this.value=='Search...'){this.value='';}" onblur="if(this.value==''){this.value='Search...';}" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="basic-addon2">
+                  <span class="glyphicon glyphicon-search"></span>
+              </span>
+            </form>
+
+          </div>
+        </div>
+      </header>
+      
+      <!-- /HEADER -->
+
+      <!-- HORIZONTAL NAV -->
+      <nav id="horznav" class="col-xs-12">
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a href="index.html">Home</a></li>
+          <li role="presentation"><a href="about.html">About<span class="hidden-xs hidden-sm"> Us</span></a></li>
+          <li role="presentation"><a href="faq.html">FAQ</a></li>
+          <li role="presentation"><a href="blog.html">Blog</a></li>
+          <li role="presentation"><a href="rfq.html">RFQ</a></li>
+          <li role="presentation" class="hidden-xs hidden-sm"><a href="forms.html">Forms</a></li>
+          <li role="presentation"><a href="contact.html"><span id="contactus_us">Contact<span class="hidden-xs hidden-sm"> Us</span></span></a></li>
+        </ul>
+      </nav>
+      <!-- /HORIZONTAL NAV -->
+    </div>
