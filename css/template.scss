@@ -462,7 +462,7 @@ h3.highlights{
     }
 }
 .feature-box {
-    background:url('/img/homepageadbackground.png');
+    background:url('img/homepageadbackground.png');
     background-size: 100% 100%;
     padding:10px 30px !important;
 }
@@ -617,6 +617,9 @@ div.no-well img {
         padding:10px 0;
         max-height:154px;
     }
+        #left_nav{
+        height:1150px;
+    } 
 }
 // 768 ************** Tablet↓
 @media only screen and (max-width:768px){
