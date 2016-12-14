@@ -87,15 +87,31 @@
 
       <!-- HORIZONTAL NAV -->
       <nav id="horznav" class="col-xs-12">
-        <ul class="nav nav-tabs">
-          <li role="presentation"><a href="index.html">Home</a></li>
-          <li role="presentation"><a href="about.html">About<span class="hidden-xs hidden-sm"> Us</span></a></li>
-          <li role="presentation"><a href="faq.html">FAQ</a></li>
-          <li role="presentation"><a href="blog.html">Blog</a></li>
-          <li role="presentation"><a href="rfq.html">RFQ</a></li>
-          <li role="presentation" class="hidden-xs hidden-sm"><a href="forms.html">Forms</a></li>
-          <li role="presentation"><a href="contact.html"><span id="contactus_us">Contact<span class="hidden-xs hidden-sm"> Us</span></span></a></li>
-        </ul>
+          <div class="nav-brand">
+              <ul class="nav nav-tabs minitab">
+              <li>
+                  <a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+              </li>
+              <li class="nav nav-tabs minitab navbar-default pull-right">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-popup" aria-expanded="false" aria-controls="nav-popup">
+                      <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </li>
+              </ul>
+          </div>
+        <div id="nav-popup" class="navbar-collapse collapse" aria-expanded="false">
+            
+        <ul id="nav-popupWrapper-inner" class="nav nav-tabs">
+          <li class="col-xs-12" class="col-xs-12" role="presentation"><a href="about.html">About<span class="hidden-xs hidden-sm"> Us</span></a></li>
+          <li class="col-xs-12" role="presentation"><a href="faq.html">FAQ</a></li>
+          <li class="col-xs-12" role="presentation"><a href="blog.html">Blog</a></li>
+          <li class="col-xs-12" role="presentation"><a href="rfq.html">RFQ</a></li>
+          <li class="col-xs-12" role="presentation" class="hidden-xs hidden-sm"><a href="forms.html">Forms</a></li>
+          <li class="col-xs-12" role="presentation"><a href="contact.html"><span id="contactus_us">Contact<span class="hidden-xs hidden-sm"> Us</span></span></a></li>
+          </div>
+        </div>
       </nav>
       <!-- /HORIZONTAL NAV -->
     </div>
