@@ -1,0 +1,90 @@
+  
+<!-- SECTION HEADER -->
+<div class="col col-xs-12 page-header">
+  <div class="col-xs-6 col-md-3">
+    <img src="img/stickman mail.jpg" class="stickman" alt="stickman holding envelope">
+  </div>
+  <div class="panel col-xs-6 col-md-9">
+    <h4>Contact Information</h4>
+  </div>
+
+  <div class="col-xs-12 col-md-9">
+    <p>For all general inquiries please complete our <a href="contact-form.html" class="link"><b>Contact Form</b></a>.</p>
+    <p>To request information or pricing regarding a specific part please use our <a href="rfq.html" class="link"><b>Request for Quote forms</b></a>.</p>
+    <p>For immediate assistance please call us at 613-744-3670</p>
+  </div>
+</div>
+        
+<!-- CONTACT FORM -->
+<form name="profile" method='get' class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+        <label for='companyName' class="label" id='companyNameLabel'>Company Name</label>
+        <input type="text" id="companyName" name="companyName" class="form-control" placeholder="Please enter your company name">
+
+        <label for='customerName' class="label" id='customerNameLabel'>Customer Name</label>
+        <input type="text" id="customerName" name="customerName" class="form-control" placeholder="Please enter your name">
+
+        <label for='customerPhone' class="label" id='customerPhoneLabel'>Phone Number</label>
+        <input type="text" id="customerPhone" name="customerPhone" class="form-control" placeholder="(613) 744-3670">
+
+        <label for='customerEmail' class="label" id='customerEmailLabel'>Email Address</label>
+        <input type="text" id="customerEmail" name="customerEmail" class="form-control" placeholder="purchasing@company.com">
+
+        <label for="emailAddressTo" class="label" id='AddressToLabel'>Attention</label>
+        <select id="AddressTo" name="AddressTo" class="form-control">
+          <option class="hideme" name="couseSelect" value="">Select Department</option>
+          <option name="sales" value="sales">Sales</option>
+          <option name="eng-mft" value="eng-mft">Engineering &amp; Manufacturing</option>
+          <option name="accounts-receivable" value="accounts-receivable">Accounts - Receivable</option>
+          <option name="accounts-payable" value="accounts-payable">Accounts - Payable</option>
+          <option name="emailGeneral" value="emailGeneral">General</option>
+        </select>
+
+        <label for='emailSubject' class="label" id='emailSubjectLabel'>Subject</label>
+        <input type="text" id="emailSubject" name="emailSubject" class="form-control" placeholder="Please enter your subject line">
+        
+        <label for='emailContent' class="label" id='emailContentLabel'>Message</label>
+        <input type="textarea" id="emailContent" name="emailContent" class="form-control" placeholder="Please enter your subject line">
+
+               
+<!--
+          <div class="text">Please enter the following code into the box provided:
+            <br>(not case sensitive)
+            <br><script type="text/javascript">
+function Play_CAPTCHA_Sound(surl) {
+if (document.all) {
+	if (!document.getElementById('captcha_bgsound')) {
+		var bgsound = document.createElement('bgsound');
+		bgsound.id = 'captcha_bgsound';
+		document.body.appendChild(bgsound);
+	}
+	document.getElementById('captcha_bgsound').src = surl;
+}
+else {
+	if (!document.getElementById('captcha_embed')) {
+			var embed = document.createElement('span');
+			embed.id = 'captcha_embed';
+			document.body.appendChild(embed);
+		}
+  	document.getElementById('captcha_embed').innerHTML = '<embed src="' + surl + '" hidden="true" autostart="true" />';
+	}
+}
+</script>
+<img src="/FileUpload/TextObject.aspx?type=image&amp;guid=6dadf2ae-921c-47dc-bc0e-530eadbbcac0" alt="">
+<img src="/a/i/speaker_icon.gif" height="20" width="20" onclick="Play_CAPTCHA_Sound('/FileUpload/TextObject.aspx?type=sound&amp;guid=6dadf2ae-921c-47dc-bc0e-530eadbbcac0');" style="cursor: pointer;">
+-->
+           <br>
+            <br> 
+<!--            <input type="text" name="Verification_Code">-->
+
+            <input class="btn btn-blue" type="submit" name="submit" value="submit">
+<!--
+            <input type="hidden" name="email_From" value="customer@iconopower.com">
+            <input type="hidden" name="email_To" value="sales@iconopower.com">
+<input type="hidden" name="email_To" value="christine.@iconopower.com">
+            <input type="hidden" name="email_Subject" value="Contact Form Submission">
+            <input type="hidden" name="email_ThankYou" value="Thank you for contacting us.<br/><Br/>We have received your inquiry and will respond as soon as possible.<br/><br/>If you do not received a response email, consider the following steps:<ul><li>Ensure you have provided the correct email address and that you are checking the correct email account for the message.</li><li>Ensure your spam filter settings are not blocking emails from 'sales@iconopower.com'.</li><li>Exercise patience as the email may take time to arrive in your inbox.</li><li>If a response does not arrive within a day, please call the appropriate department for resolution.</li></ul>">
+            <input type="hidden" name="email_Redirect" value="">
+          </div>
+-->
+        </form>
